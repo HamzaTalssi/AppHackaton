@@ -17,7 +17,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	// display list of user
+	// display list of users
 	@GetMapping("/")
 	public String viewHomePage(Model model) {
 		model.addAttribute("listUsers", userService.getAllUsers());
